@@ -1,0 +1,79 @@
+---
+title: "Algoritmos Genéticos"
+author: "Andrés Herrera Poyatos"
+date: "23/10/2014"
+output: 
+    pdf_document:
+        toc: true
+        toc_depth: 2
+        number_sections: true
+---
+
+# Introducción a los Problemas de Optimización
+
+## Definición. Aplicación de la Inteligencia Artificial
+
+Definición de [inteligencia](http://lema.rae.es/drae/?val=inteligencia): Capacidad de entender o comprender.
+
+La inteligencia es la pricipal característica diferenciadora entre los seres humanos y los demás animales.
+Entendemos, comprendemos y actuamos en consecuencia. La inteligencia es la herramienta que ha hecho al
+ser humano perdurar en el tiempo. Es decir, la aplicación práctica de la inteligencia nos permite
+tomar mejores decisiones que el resto de especies. En definitiva, la inteligencia es la capacidad de 
+relacionar conocimientos que poseemos para resolver una determinada situación. 
+
+Si indagamos un poco en la etimología de la propia palabra encontramos en su origen latino 
+***inteligere***, compuesta de *intus* (entre) y *legere* (escoger). Por lo que podemos deducir 
+que ser inteligente es saber elegir la mejor opción  entre las que se nos brinda para resolver 
+un problema.
+
+Todo problema consta de un conjunto de posibles soluciones. Su resolución puede
+dividirse en dos fases:
+
+- Encontrar alguna solución o todas las soluciones posibles al problema.
+- Elegir dentro del conjunto de soluciones encontrado la mejor posible.
+
+Así pues, todo problema tiene un aspecto de optimización. Es más inteligente
+aquel que mejor solución encuentra.
+
+Existen problemas donde el conjunto de soluciones posibles es muy grande. En estos problemas
+nuestra capacidad para evaluar las posibles soluciones y elegir la mejor se queda "pequeña".
+Tenemos que recurrir a una inteligencia mayor: la **inteligencia artificial**.
+
+**Ineligencia Artificial:** Desarrollo y utilización de ordenadores con los que se intenta reproducir 
+los procesos de la inteligencia humana.
+
+Supongamos que se han encontrado todas las posibles soluciones a un problema dado. Denotamos *S*
+al conjunto de todas las soluciones posibles. Para comparar dos soluciones y elegirt cual es mejor
+necesitamos de un mecanismo de evaluación, elegir un valor que indique la bondad de la solución.
+Así pues, definimos una función $f: S \rightarrow \mathbb{R}$ que nos proporiona dicho valor de 
+bondad. Definimos como **Problema de Optimización** al hecho de encontrar la mejor solución posible
+del par $(S, f)$. Distinguimos dos casos:
+
+- Problema de maximización: Sean $s,s' \in S$ dos soluciones al problema. Se dice de maximización
+si verifica que s es mejor que $s'$ si, y solo si, $f(s) > f(s')$.
+- Problema de minimización: Sean $s,s' \in S$ dos soluciones al problema. Un problema de minimización
+es aquel en el que s es mejor que $s'$ si, y solo si, $f(s) < f(s')$.
+
+## Ejemplos de Problemas de Optimización
+
+### El problema del viajante de comercio
+### El problema de la máxima diversidad
+### Problemas de Optimización en codificación binaria
+### Real Coding: Optimización en variable real.
+
+## Heurísticas
+
+# Introducción a los Algoritmos Genéticos
+
+Consideremos un problema de otimización con conjunto de soluciones *S* y función objetivo *f*.
+Consideramos un conjunto de soluciones inical, denotado *P(0)*, que conforma la población del
+algoritmo genético. A la población en un tiempo $t \in \mathbb{N}$ se la denota *P(t)*. Definimos
+un algoritmo genético como una heurística probabilística que genera a partir de la población *P(t)*
+la siguiente población *P(t)* utilizando operadores basados en la genética y evolución: el operador
+de selección, operador de cruce y operador de mutación.
+
+
+
+# Elementos de los Algoritmos Genéticos
+
+# Algoritmos Genéticos relevantes en la literatura especilizada
