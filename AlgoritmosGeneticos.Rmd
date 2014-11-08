@@ -100,7 +100,7 @@ pues abandonar la idea de encontrar la mejor solución con el fin de dar con una
 ### El problema de la máxima diversidad ###
 
 Es conocido como *Maximum Diversity Problem*. Sea un conjunto finito $C = \{a_1, ..., a_n\}$, una medida
-de distancia sobre el mismo, $d: CxC \rightarrow \mathbb{R}$ y $m \in \mathbb{N}$ verificando $m \le n$.
+de distancia sobre el mismo, $d: C \times C \rightarrow \mathbb{R}$ y $m \in \mathbb{N}$ verificando $m \le n$.
 El problema de la máxima diversidad asociado a $(C,d,m)$ consiste en encontrar un subconjunto de *m* elementos 
 de *C* que maximice la suma de las distancias entre sus elementos. Por tanto, la función objetivo responde a:
 
