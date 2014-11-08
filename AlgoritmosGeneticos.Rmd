@@ -259,7 +259,7 @@ Cualquier otra mutación que siga esta filosofía es válida para el problema.
 Un **operador de cruce** es un proceso que, dadas dos soluciones $s,s' \in S$, proporciona una nueva solución
 que sea "similar" a las dos anteriores. A esta nueva solución se la denomina **hijo** mientras que a las dos
 soluciones previas se las denomina **padres**. En definitiva, la idea es la misma que la del operador de mutación,
-una aplicación $v: SxS \rightarrow \mathcal{P}(S)$ que para cada par de soluciones(*s,s'*) proporciona un conjunto
+una aplicación $v: S \times S \rightarrow \mathcal{P}(S)$ que para cada par de soluciones(*s,s'*) proporciona un conjunto
 de soluciones $v(s,s')$ de las cuales se elige la solución hijo. En este caso es más dificultoso proporcionar
 en la práctica la aplicación *v* pues los operadores de cruce buscan que las soluciones obtenidas hereden las 
 características de los padres en lugar de interpretabilidad.
