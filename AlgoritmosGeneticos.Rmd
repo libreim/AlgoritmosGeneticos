@@ -370,7 +370,7 @@ Se presenta a continuación el código correspondiente:
 ~~~cpp
 iteraciónAlgoritmoGenéticoGeneracional()
     P(t+1) <- Vacío;
-    while (size(P(t+1)) < size(P(t)) do
+    while (size(P(t+1)) < size(P(t))) do
         padre1 <- seleccion(P(t));
         padre2 <- seleccion(P(t));
         if (realEntre0y1() < prob_cruce)
@@ -492,15 +492,15 @@ Podemos argumentar una serie de pros y contras en relación a estos algoritmos:
 - Proporciona una población de soluciones como resultado final del algoritmo, teniendo más
   donde elegir.
 - Son válidos para optimización multimodal en la que se pretende conseguir todos los máximos
-  o mínimos atendiendo a la funció objetivo del problema. Para ello se utilizan con otras
+  o mínimos atendiendo a la función objetivo del problema. Para ello se utilizan con otras
   variaciones como nichos.
-- Buenos resultados con la elección del modelo adecuado.
+- Buenos resultados si se elige modelo adecuado.
 
 **CONTRAS:**
 
 - Poca fundamentación matemática.
 - Un algoritmo genético que no haya sido adaptado al problema o mal planteado en cuanto a 
-sinergia de los operadores puede dar muy mal resultado.
+sinergia entre los operadores puede dar muy mal resultado.
 
 ## Comentarios para el lector ##
 
