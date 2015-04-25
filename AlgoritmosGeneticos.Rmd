@@ -58,7 +58,7 @@ Incluso es factible encontrar problemas en los que la aplicación de algoritmos 
 de forma óptima todo el conjunto de soluciones no sean viables en cuestión de tiempo.
 Tenemos que recurrir a otra herramienta: la **inteligencia artificial**.
 
-**Ineligencia Artificial:** Desarrollo y utilización de ordenadores con los que se intenta reproducir 
+**Inteligencia Artificial:** Desarrollo y utilización de ordenadores con los que se intenta reproducir 
 los procesos de la inteligencia humana.
 
 La aplicación de la Inteligencia Artificial a la resolución de problemas de optimización es la siguiente:
@@ -286,7 +286,7 @@ salesman problem: A review of representations and operators.* Artificial Intelli
 
 - **Cruce por un punto**:  
 Sean dos soluciones $s = (s_1,..,s_n)$ y $s' = (s'_1,..,s'_n)$, se selecciona aleatoriamente $i \in {1,..,n}$
-y se toma como hijo el vector $(s_1,..,s_i,s'_i+1,...,s'_n)$. En la siguiente imagen se muestra la obtención
+y se toma como hijo el vector $(s_1,..,s_i,s'_{i+1},...,s'_n)$. En la siguiente imagen se muestra la obtención
 de dos hijos mediante este cruce:
 
 $\centerline{\includegraphics[height=3cm]{./Imagenes/PointCross.png}}$
@@ -466,9 +466,9 @@ $\centerline{\includegraphics[height=7cm, width=7cm]{./Imagenes/kroA100.eps}}$
 384. <http://www.iwr.uni-heidelberg.de/groups/comopt/software/TSPLIB95/index.html>
 
 Se puede observar la mejora progresiva de la mejor solución de la población en función del tiempo.
-Se utiliza el cruce OX, la mutación por intercambio y la selección por torneo. Si mejorasemos la
+El algoritmo utilizado consta del operador de cruce OX, la mutación por intercambio y la selección por torneo. Si mejorásemos la
 sinergia entre los operadores del algoritmo genético los resultados pueden ser muy buenos. En la siguiente
-imagen se utiliza el mismo algoritmo genético y un algoritmo genético desarrollado por mi (algoritmo genético 
+imagen se comparan el mismo algoritmo genético y un algoritmo genético desarrollado por mi (algoritmo genético 
 con diversificación voraz de la población y competición entre padres e hijos):
 
 $\centerline{\includegraphics[height=7cm, width=7cm]{./Imagenes/kroA100_1.eps}}$
