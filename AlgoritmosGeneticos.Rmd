@@ -36,7 +36,7 @@ La resolución de un problema puede dividirse en dos partes:
 Así pues, todo problema tiene un aspecto de optimización dado por el segundo paso.
 
 Supongamos que se han encontrado todas las posibles soluciones a un problema dado. Denotamos *S*
-al conjunto de todas las soluciones. Para comparar dos soluciones y saber cual es mejor
+al conjunto de todas las soluciones. Para comparar dos soluciones y saber cuál es mejor
 necesitamos una medida de la bondad de una solución. Así pues, supongamos que se dispone de una aplicación
 $f: S \rightarrow \mathbb{R}$ que nos proporciona esta medida. A esta función
 la denominaremos **función objetivo** del problema y a  *f(s)* **fitness** de $s \in \mathbb{S}$. Definimos como **Problema 
@@ -93,7 +93,7 @@ Una solución al viajante de comercio puede verse como el conjunto de arcos del 
 consiste en ver una solución como una permutación de los *n* primeros números naturales, donde cada número se identifica 
 con un vértice del grafo y el orden de la permutación indica, dado un vértice, cuál es el siguiente a visitar. En la 
 imagen anterior la mejor solución respondería a **(1,2,4,3)**. El número de soluciones posibles desde el punto de vista 
-de esta representación es $n!$ (número de permutaciones de *n* elementos). Es claro que para un *n* pequeño el problema 
+de esta representación es $(n-1)!$ (fijamos una primera ciudad y se calcula el número de permutaciones de *n-1* elementos). Es claro que para un *n* pequeño el problema 
 es inabordable  desde el punto de vista de encontrar la mejor solución por el enorme número de soluciones posibles. Debemos 
 pues abandonar la idea de encontrar la mejor solución con el fin de dar con una que al menos sea factible.
 
@@ -236,8 +236,8 @@ en intercambiar dos ciudades de posición en el recorrido.
 $\centerline{\includegraphics[height=4cm]{./Imagenes/MutacionIntercambioTSP.png}}$
 
 - **Mutación por Inserción**: 
-En este caso la función de vecindad responde a:  
-$$ v((x(1),x(2),...,x(n))) = \{(x(1),...,x(i-1),x(j),x(i+1),...,x(j-1),x(j+1),...,x(n)): i,j \in \{1,..,n\} \} $$
+En este caso la función de vecindad responde a:
+$$ v((x(1),x(2),...,x(n))) = \{(x(1),...,x(i-1),x(j),x(i),...,x(j-1),x(j+1),...,x(n)): i,j \in \{1,..,n\} \} $$
 Es decir, cualquier inserción de un elemento de la propia solución en otra posición de la misma. 
 Se toma de forma equiprobable un elemento de *v(s)* como mutación de *s*. Un ejemplo es el siguiente:
 $$ \centerline{(\textbf{1 2 \_ 4 3 8 '5' 7 6}) $\Rightarrow$ (\textbf{1 2 5 4 3 8 7 6})} $$ 
@@ -468,7 +468,7 @@ $\centerline{\includegraphics[height=7cm, width=7cm]{./Imagenes/kroA100.eps}}$
 Se puede observar la mejora progresiva de la mejor solución de la población en función del tiempo.
 El algoritmo utilizado consta del operador de cruce OX, la mutación por intercambio y la selección por torneo. Si mejorásemos la
 sinergia entre los operadores del algoritmo genético los resultados pueden ser muy buenos. En la siguiente
-imagen se comparan el mismo algoritmo genético y un algoritmo genético desarrollado por mi (algoritmo genético 
+imagen se comparan el mismo algoritmo genético y un algoritmo genético desarrollado por mí (algoritmo genético 
 con diversificación voraz de la población y competición entre padres e hijos):
 
 $\centerline{\includegraphics[height=7cm, width=7cm]{./Imagenes/kroA100_1.eps}}$
@@ -509,7 +509,7 @@ en la literatura especializada y sigue siendo una temática de investigación ac
 profundización en la temática sentiros libres de escribirme a mi dirección de correo: andreshp9@gmail.com
 
 Espero poder preparar otra sesión con otros algoritmos genéticos como CHC, Micro-GA, meméticos...
-en la que se haga incapié en la importancia de mantener una población con diversidad y al mismo
+en la que se haga hincapié en la importancia de mantener una población con diversidad y al mismo
 tiempo una gran presión selectiva.
 
 Se deja como ejercicio el desarrollo de operadores para el problema de la máxima diversidad, hecho sencillo
